@@ -5,14 +5,12 @@ const ImageScreen = () => {
 return(
     <View> 
       
-        <Text>Image Screen</Text>
-        <ImageScreen title="Forest" imageSource={require('../../assets/forest.jpg')} />
-        <ImageScreen title="Beach" imageSource={require('../../assets/beach.jpg')} />
-        <ImageScreen title="Mountain" imageSource={require('../../assets/mountain.jpg')} />
-        <Button  
-    // style={styles.button1}
-    onPress={() => props.navigation.navigate('ListScreen')}
-    title="NEXT"/>
+        <Text>Forest</Text>
+        <Image source={require('../../assets/forest.jpg')} />
+        <Text>Beach</Text>
+        <Image source={require('../../assets/beach.jpg')} />
+        <Text>Moutain</Text>
+        <Image source={require('../../assets/mountain.jpg')} />
     </View>
     );
 };

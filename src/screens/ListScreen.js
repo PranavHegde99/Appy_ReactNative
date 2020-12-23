@@ -1,7 +1,7 @@
   import React from 'react';
   import { View, StyleSheet , Text ,FlatList,Image} from 'react-native';
 
-  const ListScreen = props => {
+  const ListScreen = () => {
       const student = [
         { name: 'Pranav',Marks:'60',key:'1'},
         { name: 'Mrtra',Marks:'60',key:'2'},
@@ -22,7 +22,7 @@
         }}
           />
 
-            <Image source={props.imageSource}/>
+           
           </View>
           );
   };
