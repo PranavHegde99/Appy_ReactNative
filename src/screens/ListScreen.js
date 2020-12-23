@@ -1,7 +1,7 @@
   import React from 'react';
-  import { View, StyleSheet , Text ,FlatList} from 'react-native';
+  import { View, StyleSheet , Text ,FlatList,Image} from 'react-native';
 
-  const ListScreen = () => {
+  const ListScreen = props => {
       const student = [
         { name: 'Pranav',Marks:'60',key:'1'},
         { name: 'Mrtra',Marks:'60',key:'2'},
@@ -13,14 +13,18 @@
         { name: 'Br',Marks:'60',key:'8'},  
         
       ];
-      return (<FlatList 
+      return (
+      <View><FlatList 
         horizontal 
         data ={student}
         renderItem={({item}) =>{
             return <Text style={styles.textStyle}>{item.name},{item.Marks}</Text>
         }}
           />
-      );
+
+            <Image source={props.imageSource}/>
+          </View>
+          );
   };
 
   const styles = StyleSheet.create({
