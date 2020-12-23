@@ -9,9 +9,12 @@
         { name: 'Br',Marks:'60'},  
         
       ];
-      return (<FlatList data ={student}
-        renderItem={(element) =>{}}
-         />
+      return (<FlatList 
+        data ={student}
+        renderItem={({item}) =>{
+            return <Text>{item.name},{item.Marks}</Text>
+        }}
+          />
       );
   };
 
