@@ -1,5 +1,5 @@
 import React from "react";
-import { AppRegistry,Text, StyleSheet,View,Button, TouchableOpacity } from "react-native";
+import { SafeAreaView,AppRegistry,Text, StyleSheet,View,Button, TouchableOpacity } from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
@@ -16,20 +16,26 @@ const HomeScreen = (props) => {
       <Text>Go to List Demo</Text>
     </TouchableOpacity>
 
-    <Button style={styles.Buttonstyle}
-    onPress={() => props.navigation.navigate('Counter')} 
-    title="Counter"/>
+   
 <Text> </Text>
-
-<Button
-  onPress={onPressLearnMore}
-  title="Learn More"
-  color="#841584"
-  accessibilityLabel="Learn more about this purple button"
-/>
+        <Button 
+          color="#ff5c5c"
+          title="Left button"
+          onPress={() => Alert.alert('Left button pressed')}
+        />
+        <View style={ {width:"50%"} }>
+        <Button   onPress = { () => { console.log("Button pressed!") } } title="Read later" />
+        <Button   onPress = { () => { console.log("Button pressed!") } } title="Read later" />
+      </View>
+      <Text>
+        
+      </Text>
+        
+      
 
 </View>
-);
+
+  );
 };
 
 const styles = StyleSheet.create({
