@@ -1,5 +1,7 @@
 import React from "react";
-import { Text, StyleSheet,View,Button, TouchableOpacity } from "react-native";
+import { AppRegistry,Text, StyleSheet,View,Button, TouchableOpacity } from "react-native";
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 
 const HomeScreen = (props) => {
   console.log(props.navigation);
@@ -17,6 +19,15 @@ const HomeScreen = (props) => {
     <Button style={styles.Buttonstyle}
     onPress={() => props.navigation.navigate('Counter')} 
     title="Counter"/>
+<Text> </Text>
+
+<Button
+  onPress={onPressLearnMore}
+  title="Learn More"
+  color="#841584"
+  accessibilityLabel="Learn more about this purple button"
+/>
+
 </View>
 );
 };
