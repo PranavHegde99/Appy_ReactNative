@@ -16,7 +16,7 @@ const navigator = createStackNavigator(
 
   },
   { 
-    initialRouteName: 'Counter',
+    initialRouteName: 'Home',
     defaultNavigationOptions: {
       title: 'PranavHegde',
     },
