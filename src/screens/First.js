@@ -7,6 +7,7 @@ const First = () => {
         <View>
             <Text style={styles.textStyle}>Welcome To First Web Pages</Text>
             <Text style={styles.hedder}>{var1}</Text>
+            <Text style={{height:20,width:20,backgroundColor:'red'}}>Pranav</Text>
         </View>
         
         );
