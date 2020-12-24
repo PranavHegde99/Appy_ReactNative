@@ -5,17 +5,18 @@ import ComponentScreen from './src/screens/ComponentScreen';
 import First from './src/screens/First';
 import ListScreen from './src/screens/ListScreen';
 import ImageScreen from './src/screens/ImageScreen';
-
+import CounterScreen from './src/screens/CounterScreen';
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
     Components: First,
     List: ListScreen,
-    Image: ImageScreen
+    Image: ImageScreen,
+    Counter : CounterScreen,
 
   },
   { 
-    initialRouteName: 'Home',
+    initialRouteName: 'Counter',
     defaultNavigationOptions: {
       title: 'PranavHegde',
     },

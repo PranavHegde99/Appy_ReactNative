@@ -7,13 +7,15 @@ const HomeScreen = (props) => {
     <View>
     <Text style={styles.text}>Welcome To First Web Pages</Text>
     <Text style={styles.text}>Sisri</Text>
-    <Button  
-    // style={styles.button1}
-    onPress={() => props.navigation.navigate('Image')}
+    <Button onPress={() => props.navigation.navigate('Image')}
     title="NEXT"/>
+
     <TouchableOpacity onPress={() => props.navigation.navigate('List')}>
       <Text>Go to List Demo</Text>
     </TouchableOpacity>
+
+    <Button onPress={() => props.navigation.navigate('Counter')} 
+    title="Counter"/>
 </View>
 );
 };
