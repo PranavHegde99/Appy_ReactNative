@@ -51,10 +51,10 @@ const styles = StyleSheet.create({
   },
   text1: {
     // fontSize: 30,
-    borderWidth:3,
+    // borderWidth:3,
      borderColor:'blue',
      height:'auto',
-     flex: 1,
+    //  flex: 1,
     
   },
   text2: {
@@ -62,6 +62,9 @@ const styles = StyleSheet.create({
     borderWidth:3,
      borderColor:'blue',
      height:'auto',
+    //  alignSelf:'stretch',
+    position:'absolute',
+    fontSize:65,
      
     
   },
