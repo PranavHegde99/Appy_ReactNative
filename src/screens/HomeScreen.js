@@ -43,11 +43,12 @@ const styles = StyleSheet.create({
      borderWidth:3,
      borderColor:'green',
     //  alignItems:'flex-start'
-    alignItems:'center'
+    alignItems:'center',
     // alignItems:'flex-end'
+    flexDirection:'column',
   },
   text: {
-    fontSize: 30,
+    // fontSize: 30,
     borderWidth:3,
      borderColor:'blue',
     
