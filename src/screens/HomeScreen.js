@@ -44,13 +44,17 @@ const styles = StyleSheet.create({
      borderColor:'green',
     //  alignItems:'flex-start'
     alignItems:'center',
-    // alignItems:'flex-end'
-    flexDirection:'column',
+    // flexDirection:'row',
+    // alignItems:'flex-end',
+    justifyContent:'center',
+   
+    height:500,
   },
   text: {
     // fontSize: 30,
     borderWidth:3,
      borderColor:'blue',
+    //  height:'auto',
     
   },
   Buttonstyle: {
