@@ -28,7 +28,7 @@ const HomeScreen = (props) => {
         <Button   onPress = { () => { console.log("Button pressed!") } } title="Read later" />
       </View>
       <Text>
-        
+
       </Text>
         
       
@@ -41,17 +41,22 @@ const HomeScreen = (props) => {
 const styles = StyleSheet.create({
   viewstyle : {
      borderWidth:3,
-     borderColor:'green'
+     borderColor:'green',
+    //  alignItems:'flex-start'
+    alignItems:'center'
+    // alignItems:'flex-end'
   },
   text: {
     fontSize: 30,
     borderWidth:3,
-     borderColor:'blue'
+     borderColor:'blue',
+    
   },
   Buttonstyle: {
     height:80,
     width:100,
-    backgroundColor:'red'
+    backgroundColor:'red',
+    // alignItems:'flex-start'
   }
  
 });
