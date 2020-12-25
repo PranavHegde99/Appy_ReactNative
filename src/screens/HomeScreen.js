@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
      borderColor:'blue',
      height:'auto',
     //  alignSelf:'stretch',
-    position:'absolute',
+    // position:'absolute',
     fontSize:65,
      
     
